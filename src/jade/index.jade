@@ -1,0 +1,98 @@
+extends templates/master.jade
+
+block body
+    header.page__header
+        a(href='./' class='silent-link').logo
+            img(src='imgs/logo.svg' width='90')
+        h1.page__headline Hi, I'm Michail Yasonik: a front-end developer with a business degree.
+        menu.contact-nav
+            li.contact-nav__item
+                a(href='mailto:michail@yasonik.com' class='contact-nav__link silent-link' target='_blank')
+                    svg(xmlns='http://www.w3.org/2000/svg' height='17' viewBox='0 0 24 17' alt='email' class='icon')
+                        path(class='icon--whiteFill' d='M21.5,0h-19c-1.1,0-2,0.9-2,2v12c0,1.1,0.9,2,2,2h19c1.1,0,2-0.9,2-2V2C23.5,0.9,22.6,0,21.5,0z M22.1,14.1c-0.2-0.1-1.4-1.3-2.7-2.5c-1.3-1.3-2.3-2.3-2.3-2.3c0,0-1,0.8-2.1,1.9c-1.2,1-2.5,1.9-3,1.9c-0.5,0-1.8-0.8-2.8-1.8c-1.1-1-2-1.8-2-1.8c0,0-1,1-2.3,2.2c-1.2,1.2-2.4,2.3-2.6,2.4c-0.2,0.1,0.4-1.3,1.4-3.1c1-1.8,1.8-3.3,1.8-3.3c0,0-0.8-1.3-1.8-2.8C2.6,3.5,2,2.3,2.2,2.4c0.2,0.1,2.3,2,4.7,4.2s4.7,4,5.2,4c0.5,0,2.8-1.8,5.2-4c2.4-2.2,4.5-4.1,4.7-4.2c0.2-0.1-0.4,1-1.4,2.4c-1,1.4-1.8,2.6-1.7,2.7c0,0,0.8,1.6,1.8,3.5C21.6,12.8,22.3,14.3,22.1,14.1z')
+            li.contact-nav__item
+                a(href='//linkedin.com/in/myasonik' class='contact-nav__link silent-link' target='_blank')
+                    svg(height='16' viewBox='0 0 228.4 217.5' xmlns='http://www.w3.org/2000/svg' alt='linkedin' class='icon')
+                        path(class='icon--whiteFill' d='M0,24.5L0,24.5c0,13.6,6.8,20.4,17.7,25.8l6.8,1.4h5.4c12.2,0,20.4-6.8,24.5-19v-5.4c0-12.2-6.8-20.4-19-24.5L27.2,0C15,0,5.4,6.8,1.4,17.7L0,24.5z')
+                        rect(class='icon--whiteFill' x='4.1' y='70.7'  width='47.6' height='146.8')
+                        path(class='icon--whiteFill' d='M127.8,91.1L127.8,91.1V70.7H80.2v146.8h47.6v-76.1c0-15,2.7-23.1,6.8-25.8c5.4-6.8,12.2-9.5,17.7-9.5h4.1c10.9,0,17.7,6.8,21.8,19c1.4,5.4,1.4,9.5,1.4,13.6v78.9h48.9v-80.2c0-35.3-12.2-57.1-35.3-66.6c-8.2-2.7-16.3-2.7-23.1-2.7C153.6,68,138.7,74.8,127.8,91.1z')
+            li.contact-nav__item
+                a(href='//github.com/myasonik' class='contact-nav__link silent-link')
+                    svg(height='16' viewbox='0 0 1228 1000' xmlns='http://www.w3.org/2000/svg' alt='github' class='icon')
+                        path(class='icon--whiteFill' d='M1079.14 -.985c-33.192 -.491 -110.295 10.777 -239.027 96.936 -70.161 -17.535 -144.812 -26.188 -219.591 -26.188 -82.278 0 -165.425 10.448 -242.965 31.719 -184.823 -126.087 -266.402 -100.248 -266.402 -100.248 -53.258 133.183 -20.347 231.788 -10.344 256.277 -62.597 67.558 -100.811 153.827 -100.811 259.559 0 79.822 9.085 151.416 31.281 213.653 1.231 4.803 .832 3.732 2.906 7.844 4.89 12.884 10.327 25.39 16.438 37.468 2.094 4.346 4 7.563 4 7.563 62.395 116.307 185.396 191.438 404.244 215.028l330.995 .375c233.392 -23.144 345.386 -98.499 396.994 -215.591l3.281 -7.625c4.89 -11.828 9.153 -24.135 20.813 -65.562 11.659 -41.427 16.875 -113.172 16.875 -193.185 0 -114.755 -43.1 -206.577 -113.092 -276.434 12.231 -39.48 28.57 -127.158 -16.313 -239.402 0 0 -6.293 -1.995 -19.281 -2.188zm-260.84 421.118c53.893 -.117 100.057 9.136 134.717 45.499l0 .031c43.369 45.541 68.749 100.525 68.749 159.778 0 276.658 -177.932 284.183 -397.4 284.183 -219.506 0 -397.4 -38.336 -397.4 -284.183 0 -58.861 25.009 -113.516 67.843 -158.872 71.451 -75.59 192.365 -35.562 329.558 -35.562 70.423 -.011 136.564 -10.75 193.935 -10.875zm-408.807 81.468c-45.666 0 -82.687 61.741 -82.687 137.936 0 76.206 37.019 137.967 82.687 137.967 45.666 0 82.687 -61.761 82.687 -137.967 0 -76.184 -37.019 -137.881 -82.687 -137.936zm443.649 0c-45.666 0 -82.687 61.741 -82.687 137.936 0 76.206 37.019 137.967 82.687 137.967 45.666 0 82.687 -61.761 82.687 -137.967 0 -76.184 -37.019 -137.881 -82.687 -137.936z')
+            li.contact-nav__item
+                a(href='MichailYasonikResume.pdf' class='contact-nav__link contact-nav__link--tall silent-link' target='_blank')
+                    svg(viewBox='0 0 365.4 560' height='22' xmlns='http://www.w3.org/2000/svg' alt='PDF Resume' class='icon')
+                        path(class='icon--whiteFill' d="M61.1,547.8c53.6-14.6,104.7-36.5,146.1-73c31.7-26.8,48.7-58.4,46.3-102.3c-2.4-75.5,0-151,0-226.4c0-14.6,4.9-17,17-17c26.8,0,53.6,0,77.9,0c12.2,2.4,17,4.9,17,17c0,133.9,0,267.8,0,401.7c0,9.7-2.4,12.2-12.2,12.2c-97.4,0-350.7,0-353.1,0C-2.3,557.6,32.5,556.3,61.1,547.8z")
+                        path(class='icon--whiteFill' d="M0.2,124.2c0-14.6-2.4-17,17-17h53.6c12.2,0,14.6,2.4,14.6,14.6c0,68.2,0,136.3,0,204.5c0,12.2,2.4,17,14.6,21.9c21.9,9.7,46.3,19.5,65.7,31.7c29.2,19.5,31.7,41.4,7.3,68.2c-21.9,24.3-46.3,39-75.5,51.1c-26.8,9.7-70.6,19.5-97.4,29.2C0.2,523.5,0.2,187.5,0.2,124.2z")
+                        path(class='icon--whiteFill' d="M219.3,392c-17-43.8-53.6-63.3-95-75.5c-9.7-2.4-9.7-9.7-9.7-17c0-65.7,0-129,0-194.8c0-29.2,0-58.4,0-87.7c0-4.9,0-9.7,0-17c7.3,2.4,12.2,2.4,14.6,4.9c21.9,12.2,43.8,24.3,63.3,39c21.9,17,34.1,41.4,34.1,70.6c-2.4,87.7,0,172.9,0,260.5c0,4.9,0,12.2,0,17C221.8,392,221.8,392,219.3,392z")
+    main
+        ol.timeline
+            li.timeline-event
+                h3.timeline-event__header.timeline-event--ms Front-end Web Developer at Mindstream Interactive
+                .timeline-event__description
+                    p Simply put, I'm building websites most days. Typically I use Gulp (build tool), Jade (HTML preprocessor) and Sass (CSS preprocessor). JS libraries, frameworks and design patterns change frequently between projects as appropriate. Some examples include: 
+                        a(href='http://surescripts.com/' target='_blank') Surescripts
+                        | , 
+                        a(href='http://whatisa529.com/' target='_blank') WhatIsA529 
+                        | and 
+                        a(href='http://digitaladdix.com/' target='_blank') DiggitalAddix
+                        | .
+                    p Between projects, I started building an HTML email automation tool. So far it has reduced development time by roughly 80% but it's got further to go. It's currently being rebuilt in node-webkit with a full GUI.
+                p.timeline-event__duration
+                    time(datetime='2014-01') Jan 2014 
+                    | - Present
+            li.timeline-event
+                h3.timeline-event__header.timeline-event--pdp Web Master at RIT NTID DAS
+                .timeline-event__description
+                    p The original project scope was a Drupal site with a blog, some static pages and a simple event registration system. After lots of work with the client, it evolved into a custom solution built with a much more powerful registration system. I was primarily responsible for the front-end which was built in Jade and Sass. Python and PHP powered the views and various API calls.
+                    p Other parts of the job included a lot of meeting with and presenting to stakeholders and some auxiliary web work (mostly in Drupal, mostly on <a href='http://ntid.rit.edu/'>ntid.rit.edu</a>). Three months of this project were remote work.
+                    p.timeline-event__description--more RIT NTID DAS stands for Rochester Institute of Technology National Technical Institute for the Deaf Department of Access Services. And the PDP logo to the side stands for Professional Development Program, with which I worked the most.
+                p.timeline-event__duration
+                    time(datetime='2013-03') March 2013 
+                    | - 
+                    time(datetime='2014-12') Dec 2013
+            li.timeline-event
+                h3.timeline-event__header.timeline-event--csh Web Master for Computer Science House
+                .timeline-event__description
+                    p
+                        | A partner and I created and maintained the website for 
+                        a(href='http://csh.rit.edu') Computer Science House
+                        | , a technical learning community I was an active participant of.
+                    p.timeline-event__description--more The majority of this site was created in a 48 hour "project work weekend."
+                p.timeline-event__duration
+                    time(datetime='2012-09') Sept 2012 
+                    | - 
+                    time(datetime='2014-12') Dec 2013
+            li.timeline-event
+                h3.timeline-event__header.timeline-event--prog App Dev and Web Experience Intern at Progressive Insurance
+                .timeline-event__description
+                    p Starting as a software development intern, the project I was assigned to elevated early so I switched to the web experience team working on 
+                        a(href='http://www.progressive.com/') progressive.com.
+                    p The project I was assigned to in the beginning was ensuring tablet compatibility for some aging insurance-agent web apps. All that was remaining to do when I joined was a handful of cross-browser JavaScript problems. After elevating the project, I spent some time in flux which I filled with creating a web-app. Through the process of creating it, I put heavy emphasis on writing test-driven C#.NET and behavior driven JS. Following that, I switched to the web experience team where I spent much of my time fixing responsive issues across progressive.com as well as researching and prototyping different responsive image solutions.
+                p.timeline-event__duration
+                    time(datetime='2013-05') May 2013 
+                    | - 
+                    time(datetime='2013-08') Aug 2013
+            li.timeline-event
+                h3.timeline-event__header.timeline-event--rit Student at Rochester Institute of Technology
+                .timeline-event__description
+                    p Graduating with a B.S. in Management Information Systems and a minor in Computer Science in 2 and a half years was tough, but the amount of money that I saved made everything worth it.
+                    p.timeline-event__description--more For whatever it's worth, my GPA was a 3.32.
+                p.timeline-event__duration
+                    time(datetime='2011-09') Sept 2011 
+                    | - 
+                    time(datetime='2014-12') Dec 2013
+    footer.page__footer
+        p Get in touch with me!
+        menu
+            li
+                a(herf='tel:14145741755' class='silent-link') (414) 574-1755
+            li
+                a(href='mailto:michail@yasonik.com') Email
+            li
+                a(href='//linkedin.com/in/myasonik') LinkedIn
+            li
+                a(href='//github.com/myasonik') Github
+            li
+                a(href='MichailYasonikResume.pdf') PDF Resume

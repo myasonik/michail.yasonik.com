@@ -1,0 +1,28 @@
+h1,
+h2 {
+	font-weight: 300;
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 1.55555556em;
+	margin-top: 2.07142857em;
+    margin-bottom: 1.03571429em + unit(1.5);
+    @media (min-width: $tablet) {
+        font-size: 1.94444444em;
+        margin-top: 1.657142858em;
+        margin-bottom: .82857143em + unit(1.5);
+    }
+}
+
+h2 {
+	font-size: 1.55555556em;
+	margin-top: 2.07142857em;
+	margin-bottom: 1.03571429em;
+}
+
+h3 {
+	font-size: 1.27777778em;
+	margin-top: 1.260869565em;
+	margin-bottom: 1.260869565em;
+}
